@@ -274,7 +274,7 @@ bruh9.MouseButton1Click:Connect(function()
     bruh3.Text = "Valid Key"
     wait(1)
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/AC447724/VxpCvxpk/main/VXPNetWorksBeta.txt'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/VXP-ui/UniversalScript-s-/main/VXPNetWorksBeta.txt'))() 
 -- Change this to ur script
     gui:Destroy()
     else
