@@ -1,0 +1,218 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Universal Games", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "OTHER GAMES",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "2024"
+})
+
+
+local Tab2 = Window:MakeTab({
+	Name = "Tbao Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+
+local Tab3 = Window:MakeTab({
+	Name = "Ns Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+
+local Tab4 = Window:MakeTab({
+	Name = "Blade Ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+local Tab5 = Window:MakeTab({
+	Name = "Zombie Attack",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local TabA = Window:MakeTab({
+	Name = "Arsenal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+local Tab6 = Window:MakeTab({
+	Name = "Combat Warriors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local TabLogs = Window:MakeTab({
+	Name = "Logs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TabLogs:AddParagraph("You Should Know","Being banned isnt my problem.")
+
+
+Tab:AddParagraph("Games Supported","Ill add more games with working scripts.")
+
+
+
+
+
+Tab2:AddButton({
+	Name = "Tbao Hub Evade",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
+      		print("button pressed")
+  	end    
+})
+
+
+Tab2:AddButton({
+	Name = "Tbao Hub Kat(Soon)",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+Tab2:AddButton({
+	Name = "Tbao Hub Rivals!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+Tab2:AddButton({
+	Name = "Tbao Prison Life!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+Tab2:AddButton({
+	Name = "Refresh1!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+
+Tab2:AddButton({
+	Name = "Refresh2!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+
+
+Tab:AddParagraph("Info","This version is beta still so games not being here should be expected")
+
+
+
+
+
+Tab4:AddButton({
+	Name = "FFJ!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+
+
+
+Tab4:AddButton({
+	Name = "PitBull!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/main/Loader.lua", true))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+Tab5:AddButton({
+	Name = "Voidz!",
+	Callback = function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+Tab6:AddButton({
+	Name = "Inf Stamina!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/JgSquFDL"))()
+      		print("button pressed")
+  	end    
+})
+
+
+Tab6:AddButton({
+	Name = "AimBot!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/utHyEcbk"))()
+      		print("button pressed")
+  	end    
+})
+
+
+TabA:AddButton({
+	Name = "Tect Hub!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Arsenalscript.txt"))()
+      		print("button pressed")
+  	end    
+})
+
+
+
+
+TabA:AddButton({
+	Name = "Leg Hub!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/G6Ubkkuv"))()
+      		print("button pressed")
+  	end    
+})
+
+
+TabA:AddButton({
+	Name = "Quotas!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/8ysy7ENG",true))()
+      		print("button pressed")
+  	end    
+})
