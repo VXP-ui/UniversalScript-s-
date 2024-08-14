@@ -112,7 +112,7 @@ Notification:Notify(
     {Title = "STATUS", Description = "LIFETIME"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/AC447724/VxpCvxpk/main/VXPNetWorksBeta.txt'))() 
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/VXP-ui/UniversalScript-s-/main/VXPNetWorks.txt'))() 
     else
         local gui = Instance.new("ScreenGui")
 gui.Parent = game.Players.LocalPlayer.PlayerGui
