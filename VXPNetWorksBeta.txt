@@ -1019,8 +1019,8 @@ Tab:AddButton({
 
 
 Tab4:AddButton({
-	Name = "FFJ!",
-	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
+	Name = "Only Script Youll Ever Need!",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/VxpStatus/main/BBsWSblade.lua"))()
       		print("button pressed")
   	end    
 })
