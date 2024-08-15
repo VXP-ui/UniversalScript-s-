@@ -83,7 +83,7 @@ local function showLoadingScreen()
             if isUserWhitelisted() then
                 loadingText.Text = "Premium Whitelist successful! Welcome " .. game.Players.LocalPlayer.Name
                 simulateLoading() -- Simulate the remaining loading
-                print("Haskell") -- Print "Haskell" when the game is loaded
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/SourceV1/main/VxpNetworksBB.txt"))() -- Load the script
             else
                 loadingText.Text = "User not found"
                 errorSound:Play() -- Play the error sound
