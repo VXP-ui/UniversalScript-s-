@@ -1,0 +1,102 @@
+-- Roblox Loading Screen
+
+-- Loading screen GUI
+local loadingScreen = Instance.new("ScreenGui")
+loadingScreen.Name = "LoadingScreen"
+loadingScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local loadingContainer = Instance.new("Frame")
+loadingContainer.Name = "LoadingContainer"
+loadingContainer.Size = UDim2.new(1, 0, 1, 0)
+loadingContainer.BackgroundColor3 = Color3.fromRGB(0, 19, 44)
+loadingContainer.Parent = loadingScreen
+
+local loadingCircle = Instance.new("ImageLabel")
+loadingCircle.Name = "LoadingCircle"
+loadingCircle.Size = UDim2.new(0, 100, 0, 100)
+loadingCircle.Position = UDim2.new(0.5, -50, 0.5, -50)
+loadingCircle.BackgroundTransparency = 1
+loadingCircle.Image = "rbxassetid://7072725342"
+loadingCircle.ImageColor3 = Color3.fromRGB(255, 255, 255)
+loadingCircle.Parent = loadingContainer
+
+local loadingText = Instance.new("TextLabel")
+loadingText.Name = "LoadingText"
+loadingText.Size = UDim2.new(0, 300, 0, 30)
+loadingText.Position = UDim2.new(0.5, -150, 0.5, 60)
+loadingText.BackgroundTransparency = 1
+loadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
+loadingText.Font = Enum.Font.SourceSans
+loadingText.TextSize = 18
+loadingText.Text = "Searching for user..."
+loadingText.Parent = loadingContainer
+
+-- Error sound
+local errorSound = Instance.new("Sound")
+errorSound.Name = "ErrorSound"
+errorSound.SoundId = "rbxassetid://6579107756"
+errorSound.Volume = 1
+errorSound.Parent = loadingScreen
+
+-- Simulate loading process
+local function simulateLoading()
+    local loadingTime = 5 -- Fixed loading time of 5 seconds
+    local startTime = tick()
+    local elapsedTime = 0
+
+    while elapsedTime < loadingTime do
+        elapsedTime = tick() - startTime
+        loadingCircle.Rotation = elapsedTime * 720 / loadingTime -- 720 degrees per second
+        task.wait()
+    end
+end
+
+-- Whitelisted usernames
+local whitelistedUsernames = {
+    "Kabob_lover24",
+    "RobloxMaster101",
+    "CodingGenius12",
+    "GameDeveloper007",
+    "BuildingBoss123",
+    "SeaLanterns12"
+}
+
+-- Check if the player's username is whitelisted
+local function isUserWhitelisted()
+    local player = game.Players.LocalPlayer
+    for _, username in ipairs(whitelistedUsernames) do
+        if player.Name == username then
+            return true
+        end
+    end
+    return false
+end
+
+-- Show the loading screen and hide it when the game is loaded
+local function showLoadingScreen()
+    loadingScreen.Enabled = true
+
+    task.spawn(function()
+        local success, err = pcall(function()
+            simulateLoading() -- Simulate the initial 5-second loading
+
+            if isUserWhitelisted() then
+                loadingText.Text = "Premium Whitelist successful! Welcome " .. game.Players.LocalPlayer.Name
+                simulateLoading() -- Simulate the remaining loading
+                print("Haskell") -- Print "Haskell" when the game is loaded
+            else
+                loadingText.Text = "User not found"
+                errorSound:Play() -- Play the error sound
+                simulateLoading() -- Simulate the remaining loading
+            end
+
+            loadingScreen.Enabled = false
+            print("Game loaded!")
+        end)
+        if not success then
+            print("Error loading game:", err)
+        end
+    end)
+end
+
+showLoadingScreen()
