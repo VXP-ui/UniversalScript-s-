@@ -55,7 +55,7 @@ end
 local whitelistedUsernames = {
     "KabobLover24",
     "AbyssAshiin",
-    "CodingGenius12",
+    "VxpVxpe",
     "GameDeveloper007",
     "BuildingBoss123",
     "SeaLanterns12"
