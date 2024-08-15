@@ -53,7 +53,7 @@ end
 
 -- Whitelisted usernames
 local whitelistedUsernames = {
-    "Kabob_lover24",
+    "KabobLover24",
     "AbyssAshiin",
     "CodingGenius12",
     "GameDeveloper007",
