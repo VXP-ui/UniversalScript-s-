@@ -54,7 +54,7 @@ end
 -- Whitelisted usernames
 local whitelistedUsernames = {
     "Kabob_lover24",
-    "RobloxMaster101",
+    "AbyssAshiin",
     "CodingGenius12",
     "GameDeveloper007",
     "BuildingBoss123",
