@@ -55,7 +55,7 @@ local Player = MakeTab({Name = "Player"})
 -- MISC/Other
 local MO = MakeTab({Name = "Misc/Other"})
 -- NeWZ
-local Updates = MakeTab({Name = "Premium"})
+local Premium = MakeTab({Name = "Premium"})
 
 
 
@@ -75,16 +75,18 @@ local section = AddSection(Player, {"Player"})
 local section = AddSection(MO, {"Misc/Other"})
 -- Updates
 local section = AddSection(Updates, {"Updates"})
--- Buttons
+-- Buttons N shi or other stuff i dont rememeber but boobs are on top
 
 -- Buttons
+-- Add Orion Shit For Shaders,Redz shi i forgot others
 
 AddButton(Main, {
   Name = "Redz Hub ()",
   Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "All of redz scripts", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "All of redz scripts", Hide
+= false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
     Name = "Redz",
@@ -347,7 +349,50 @@ Tab:AddButton({
 -- Add Orion you should remember now 
 AddButton(Main, {
   Name = "Kat()",
-  Callback = function()
+  Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Kat GUI",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "2024"
+})
+
+Tab:AddButton({
+	Name = "Main!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/SourceV1/main/Tbao%20hub%20source.txt"))()
+      		print("button pressed")
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Simple aim bot!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/utHyEcbk"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "JNNH Script!",
+	Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Remove Others tool!",
+	Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/CBp1nmPZ"))()
+      		print("button pressed")
+  	end    
+})
+
+
     
   end
 })
@@ -412,7 +457,7 @@ local Paragraph = AddParagraph(New, {"Not much here, Will try to add my own scri
 
 
 AddButton(New, {
-  Name = "Fps Counter",
+  Name = "Fps Boost",
   Callback = function()-- Create a ScreenGui to hold the FPS display
 local gui = Instance.new("ScreenGui")
 gui.Name = "FPSGui"
@@ -527,7 +572,13 @@ AddButton(Player, {
   Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() IntroText = "Loading Script..." local Window = OrionLib:MakeWindow({Name = "Player Config", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) 
 
 
+local Section = Tab3:AddSection({
+	Name = "Ill add more in future updates"
+})
 
+--[[
+Name = <string> - The name of the section.
+]]
 
 
 local Tab3 = Window:MakeTab({ 	Name = "Player", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false }) local Tab3Section = Tab3:AddSection({ 	Name = "Section 1" }) Tab3:AddButton({ 	Name = "Click To Tp", 	Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/1BA6vZYG'))() 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "Inf Jump", 	Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/hktxaJe3'))() print("button pressed") 	end }) Tab3:AddButton({ 	Name = "Chat GUI", 	Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/MJhU6Awt'))() 		print("button pressed") 	end }) Tab3:AddParagraph("More Mob scripts","These adujust speed") Tab3:AddButton({ 	Name = "Defualt", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "25", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "50", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "100", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "150", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "250", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250 		print("button pressed") 	end }) Tab3:AddParagraph("Jump","Adjust jump power here") Tab3:AddButton({ 	Name = "Defualt", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "100", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "150", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "200", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "250", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250 		print("button pressed") 	end }) Tab3:AddButton({ 	Name = "350", 	Callback = function()game.Players.LocalPlayer.Character.Humanoid.JumpPower = 350 		print("button pressed") 	end }) 
@@ -873,7 +924,7 @@ AddButton(MO, {
   Name = "UI For More Games(Beta)",
   Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Universal UI", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "OTHER GAMES",
@@ -885,7 +936,7 @@ local Section = Tab:AddSection({
 	Name = "2024"
 })
 
-
+-- Ballsack
 
 
 local Tab2 = Window:MakeTab({
@@ -930,6 +981,12 @@ local TabA = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
 
 
 
@@ -947,7 +1004,7 @@ local TabLogs = Window:MakeTab({
 	PremiumOnly = false
 })
 
-TabLogs:AddParagraph("You Should Know","Being banned isnt my problem.")
+TabLogz:AddParagraph("You Should Know","Being banned isnt my problem.")
 
 
 Tab:AddParagraph("Games Supported","Ill add more games with working scripts.")
@@ -963,7 +1020,7 @@ Tab2:AddButton({
 
 
 Tab2:AddButton({
-	Name = "Tbao Hub Kat (Soon)",
+	Name = "Tbao Hub Kat(Soon)",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -991,12 +1048,8 @@ Tab2:AddButton({
 
 
 
-
-
-
-
 Tab2:AddButton({
-	Name = "Refresh!",
+	Name = "!",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -1004,10 +1057,21 @@ Tab2:AddButton({
 
 
 
-Tab:AddParagraph("Info","This version is beta , so games not being here should be expected")
+Tab2:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
 
 
 
+Tab:AddParagraph("Info","This version is beta still so games not being here should be expected")
+
+
+
+
+-- Blade And Irher
 Tab:AddButton({
 	Name = "Button!",
 	Callback = function()
@@ -1019,8 +1083,8 @@ Tab:AddButton({
 
 
 Tab4:AddButton({
-	Name = "Only Script Youll Ever Need!",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/VxpStatus/main/BBsWSblade.lua"))()
+	Name = "FFJ!",
+	Callback = function()
       		print("button pressed")
   	end    
 })
@@ -1030,6 +1094,13 @@ Tab4:AddButton({
 
 
 
+
+Tab4:AddButton({
+	Name = "!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
 
 
 
@@ -1088,7 +1159,16 @@ TabA:AddButton({
 })
 
 
--- Update/Home
+-- Updates n shi
+AddTextBox(Home, {
+  Name = "Lag fixed. . .",
+  Default = "Supports more executors",
+  PlaceholderText = "Thats it",
+  ClearText = true,
+  Callback = function(Value)
+    
+  end
+})
 
   
 
@@ -1096,11 +1176,31 @@ TabA:AddButton({
 -- Home Paragraph
 local Paragraph = AddParagraph(Home, {"VXP NETWORKS", "VXP!"})
 
-SetParagraph(Paragraph, {"", "Fixed GUI tabs not showing. Added MM2,Trolling, and ill soon work on Kat!"})
+SetParagraph(Paragraph, {"", "Added Kat Loader, Added Premium tab."})
 
 
-local Paragraph = AddParagraph(Home, {"VXP NETWORKS", "VXP!"})
+local Paragraph = AddParagraph(Updates, {"VXP NETWORKS", "VXP!"})
 
-SetParagraph(Paragraph, {"", "Added Universal UI, Debating on removing and remaking player gui instead of fixing it. Going to replace updates with premium and adding updates too home."})
+SetParagraph(Paragraph, {"", "Fixed Excution Errors, Fixed GUI buttons not working most of the time.."})
 
+
+-- beta
+AddButton(Main, {
+  Name = "Beta Version",
+  Callback = function()local msg = Instance.new("Message",workspace) msg.Text = "Beta Is In Progress. . ." wait(5.8) msg:Destroy()
+    
+  end
+})
+
+-- Premium
+AddButton(Premium, {
+  Name = "Buy Premium Here!",
+  Callback = function()MakeNotifi({
+  Title = "VXP NETWORKS",
+  Text = "Premium is currently offsale",
+  Time = 5
+})
+
+  end
+})
 
