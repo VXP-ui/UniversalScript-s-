@@ -1059,7 +1059,7 @@ Tab:AddButton({
 
 Tab4:AddButton({
 	Name = "Blade ball (Need Whitelist)!",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/SourceV1/main/VxpNetworksBB.txt"))()
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VXP-ui/UniversalScript-s-/main/prem%20loader%20backup.txt"))()
       		print("button pressed")
   	end    
 })
