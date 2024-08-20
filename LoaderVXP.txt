@@ -924,7 +924,7 @@ AddButton(MO, {
   Name = "UI For More Games(Beta)",
   Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Universal GUI", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "OTHER GAMES",
@@ -933,10 +933,9 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "2024"
+	Name = "Updated 20/8/24"
 })
 
--- Ballsack
 
 
 local Tab2 = Window:MakeTab({
@@ -981,13 +980,6 @@ local TabA = Window:MakeTab({
 	PremiumOnly = false
 })
 
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-
 
 
 
@@ -1004,7 +996,7 @@ local TabLogs = Window:MakeTab({
 	PremiumOnly = false
 })
 
-TabLogz:AddParagraph("You Should Know","Being banned isnt my problem.")
+TabLogs:AddParagraph("You Should Know","Being banned isnt my problem.")
 
 
 Tab:AddParagraph("Games Supported","Ill add more games with working scripts.")
@@ -1185,7 +1177,7 @@ SetParagraph(Paragraph, {"", "Fixed Excution Errors, Fixed GUI buttons not worki
 
 
 -- beta
-AddButton(Main, {
+AddButton(Home, {
   Name = "Beta Version",
   Callback = function()local msg = Instance.new("Message",workspace) msg.Text = "Beta Is In Progress. . ." wait(5.8) msg:Destroy()
     
