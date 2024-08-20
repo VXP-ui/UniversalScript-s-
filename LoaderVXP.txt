@@ -351,7 +351,7 @@ AddButton(Main, {
   Name = "Kat()",
   Callback = function()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kat UI", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Kat GUI",
@@ -913,7 +913,7 @@ AddButton(MO, {
 
 
 AddButton(MO, {
-  Name = "Crash Game",
+  Name = "Crash Game (Fixing)",
   Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/4ynRTJjK'))() 
     
   end
@@ -949,7 +949,7 @@ local Tab2 = Window:MakeTab({
 
 
 local Tab3 = Window:MakeTab({
-	Name = "Ns Hub",
+	Name = "Ns Hub (Soon)",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -1040,32 +1040,15 @@ Tab2:AddButton({
 
 
 
-Tab2:AddButton({
-	Name = "!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
-
-
-Tab2:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
-
 
 Tab:AddParagraph("Info","This version is beta still so games not being here should be expected")
 
 
 
 
--- Blade And Irher
+-- Blade And Other
 Tab:AddButton({
-	Name = "Button!",
+	Name = "Refresh GUI!",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -1075,7 +1058,7 @@ Tab:AddButton({
 
 
 Tab4:AddButton({
-	Name = "FFJ!",
+	Name = "Blade ball (Need Whitelist)!",
 	Callback = function()
       		print("button pressed")
   	end    
@@ -1088,7 +1071,7 @@ Tab4:AddButton({
 
 
 Tab4:AddButton({
-	Name = "!",
+	Name = "Refresh",
 	Callback = function()
       		print("button pressed")
   	end    
