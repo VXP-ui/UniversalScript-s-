@@ -1179,3 +1179,14 @@ AddButton(Premium, {
   end
 })
 
+AddButton(Premium, {
+  Name = "Join Discord!",
+  Callback = function()setclipboard("https://discord.gg/etVYz8CnsW") wait(0.5) MakeNotifi({
+  Title = "VXP NETWORKS",
+  Text = "Link has been copied to clipboard",
+  Time = 5
+})
+
+  end
+})
+
