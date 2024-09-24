@@ -61,7 +61,7 @@ local whitelistedUsernames = {
     "SeaLanterns12",
     "mex_ILUM",
     "clytts",
-    "whitelisteruser3",
+    "RRJR4DR4DREU",
     "whitelisteruser4",
     "whitelisteruser5",
     "whitelisteruser6",
