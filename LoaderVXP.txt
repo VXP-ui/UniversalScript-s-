@@ -1,3 +1,7 @@
+--[[ 
+Last update 8/19/24 american. Version 3
+]]
+
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
 
 -- Key Sysyem And Name
